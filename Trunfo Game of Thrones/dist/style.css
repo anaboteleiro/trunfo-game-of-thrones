@@ -1,7 +1,7 @@
 body {
   font-family: "Roboto Mono", monospace;
   min-height: 854px;
-  background-image: url("https://www.alura.com.br/assets/img/imersoes/dev-2021/dia-07-super-trunfo-bg.png");
+  background-image: url("https://hbomax-images.warnermediacdn.com/2021-12/got-hero.jpg?host=wme-hbomax-drupal-prod.s3.amazonaws.com&w=2800");
   background-color: #000000;
   background-size: cover;
   background-position: center top;
@@ -15,8 +15,28 @@ body {
 }
 
 .page-title {
-  color: #ffffff;
-  margin: 5px 0;
+  animation: neon .08s ease-in-out infinite alternate
+}
+
+@keyframes neon {
+  from {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.92),
+    0 0 30px rgba(202,228,225,0.34),
+    0 0 12px rgba(30,132,242,0.52),
+    0 0 21px rgba(30,132,242,0.92),
+    0 0 34px rgba(30,132,242,0.78),
+    0 0 54px rgba(30,132,242,0.92);
+  }
+  to {
+    text-shadow:
+    0 0 6px rgba(202,228,225,0.98),
+    0 0 30px rgba(202,228,225,0.42),
+    0 0 12px rgba(30,132,242,0.58),
+    0 0 22px rgba(30,132,242,0.84),
+    0 0 38px rgba(30,132,242,0.88),
+    0 0 60px rgba(30,132,242,1);
+  }
 }
 
 button,
